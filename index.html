@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constructors</title>
+<style>
+body{
+    background-color: aquamarine;
+}
+
+</style>
+</head>
+
+<body >
+    <h1>Constructor function</h1>
+<p> This assignment is designed just for  practice of <b>constructor function</b>  in javascript. It does`nt contain html and css it is <b> pure javascript only</b>. Open <b> inspect</b> by right then <b> console</b> to see what i have coded?
+   <div> <b> Thank You.</b></div>
+      
+
+</body>
+<script>
+
+            function Friends(name , age) {
+                this.name = name ;
+                this.age = age ;
+
+            }
+        let friend1 = new Friends("javeria",19);
+        console.log(friend1)
+
+        function  Student ( group , age){
+            this.level  = group;
+            this.duration = age;
+
+        }
+        let firstPerson = new Student('IT.industry' , 45)
+        console.log(firstPerson)
+
+        function Data(memory , RAM) {
+            this.dataMemory =  memory;
+            this.DataRAM = RAM;
+        }
+        let firstMemory = new Data ('222.3 GB','32GB')
+        console.log(firstMemory)
+
+        addition = function (integer1, integer2) {
+            this.firstInteger = integer1;
+            this.secondInteger = integer2;
+
+
+
+            this.result = integer1 + integer2
+
+        }
+        let myAddition = new addition(2, 4)
+       myAddition = new addition(4,8)
+
+        console.log(myAddition)
+
+    subtraction = function (digit1 , digit2)
+    {
+        this.firstDigit = digit1 ;
+        this.Digit  = digit2 ;
+
+        this.result  = digit1-digit2
+    }
+    let mySubtraction = new subtraction (23,6)
+    console.log(mySubtraction)
+
+
+    multiplication = function (num1, num2) {
+        this.num1 = +num1;
+        this.num2 = +num2;
+        this.num3 = +num2 * +num2
+    }
+let myNum  = new multiplication(34,43)
+
+let yourNum =new multiplication(23,90)
+console.log(myNum,yourNum)
+
+// </script>
+
+</html>
